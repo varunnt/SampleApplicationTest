@@ -2,13 +2,13 @@ package testExecutor;
 
 import org.openqa.selenium.WebDriver;
 
-import testCases.SearchAndStore;
+import testCases.*;
 
 public class TestSuite1 {
 	
 	public boolean run(WebDriver driver){
 		boolean result;
-		SearchAndStore test = new SearchAndStore(driver);
+		AddComputer test = new AddComputer(driver);
 		result = test.preTest();
 		result = test.test();
 		result = test.postTest();

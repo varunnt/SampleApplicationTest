@@ -20,7 +20,9 @@ public class SearchAndStore implements GenericTestCase{
 	@Test
 	public boolean test(){
 		boolean result;
-		result = sel.enterText("xpath", "ace");
+		result = sel.enterText("//input[@id='searchbox']", "ace");
+		result = sel.elementClick("//input[@id='searchsubmit']");
+		result = sel.elementClick("//a[text()='Acer Extensa']");
 		return result;
 	}
 	
